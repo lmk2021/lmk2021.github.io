@@ -1,0 +1,15 @@
+<krpano>
+	
+	<include url="plugins/webvr.xml" />
+	
+	<!-- enable 'fake' VR support for non-WebVR desktop systems for testing -->
+	<plugin name="webvr" mobilevr_fake_support="true" /> 
+	
+	<!-- remove the default VR cursor -->
+	<plugin name="webvr" vr_cursor="null" /> 
+	
+	<image stereo="true" stereoformat="TB">
+		<sphere url="Pano3ff.jpg" />
+	</image>
+	
+</krpano>
