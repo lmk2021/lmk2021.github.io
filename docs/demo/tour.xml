@@ -82,7 +82,7 @@
 
 	<!-- for images in html-code the src path need to be relative to the html file - adjust it by using 'calc:' and the current xml path -->
 	<combobox name="stereomodes" align="bottom" design="stereomodesselection" x="0" y="15" callonclickafterclose="false">
-		<item name="item1" caption="calc:'[img src=[dq]' + network.currentxmlpath + '/img_2d.png[dq]       style=[dq]width:90px;height:55px;[dq] /][br]Monoscopic'"   onclick="set(display.stereo,false); set(display.anaglyph,false); clearinterval(stereotoggle); set(display.monoside,1);" />
+		<item name="item1" caption="calc:'[img src=[dq]img_2d.png[dq]       style=[dq]width:90px;height:55px;[dq] /][br]Monoscopic'"   onclick="set(display.stereo,false); set(display.anaglyph,false); clearinterval(stereotoggle); set(display.monoside,1);" />
 		<item name="item2" caption="calc:'[img src=[dq]' + network.currentxmlpath + '/img_anaglyph.png[dq] style=[dq]width:90px;height:55px;[dq] /][br]Anaglyph'"     onclick="clearinterval(stereotoggle); set(display.anaglyph,true);" />
 		<item name="item3" caption="calc:'[img src=[dq]' + network.currentxmlpath + '/img_3dtv.png[dq]     style=[dq]width:90px;height:55px;[dq] /][br]3D TV'"        onclick="clearinterval(stereotoggle); set(display.stereo, true); set(display.stereoscale,0.5); updatescreen();" />
 		<item name="item4" caption="calc:'[img src=[dq]' + network.currentxmlpath + '/img_sbs.png[dq]      style=[dq]width:90px;height:55px;[dq] /][br]Side by Side'" onclick="clearinterval(stereotoggle); set(display.stereo, true); set(display.stereoscale,1.0); updatescreen();" />
