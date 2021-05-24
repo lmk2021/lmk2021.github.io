@@ -79,83 +79,63 @@
 
 
 	
-	<scene name="scene_PanA1hc" title="PanA1hc" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanA1hc.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_PanP1C" title="PanP1C" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanP1C.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-102.795" vlookat="1.973" fovtype="MFOV" fov="133.504" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="274.376" vlookat="1.013" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/PanA1hc.tiles/preview.jpg" />
+		<preview url="panos/PanP1C.tiles/preview.jpg" />
 
 		<image if="!(webvr.isenabled OR device.mobilevr)">
-			<cube url="panos/PanA1hc.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1600" />
+			<cube url="panos/PanP1C.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2624" />
 		</image>
 
 		<image stereo="true" stereolabels="1|2" if="webvr.isenabled OR device.mobilevr">
-			<cube url="panos/PanA1hc.tiles/vr/pano_%t_%s.jpg" />
+			<cube url="panos/PanP1C.tiles/vr/pano_%t_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-110.712" atv="16.192" linkedscene="scene_pana3hc" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-71.880" atv="17.025" linkedscene="scene_pana2hc" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-110.761" atv="15.215" linkedscene="scene_panp3c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-72.133" atv="17.144" linkedscene="scene_panp2c" />
 
 	</scene>
 
-	<scene name="scene_PanA2hc" title="PanA2hc" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanA2hc.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_PanP2C" title="PanP2C" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanP2C.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-77.683" vlookat="0.985" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-6.515" vlookat="1.009" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/PanA2hc.tiles/preview.jpg" />
+		<preview url="panos/PanP2C.tiles/preview.jpg" />
 
 		<image if="!(webvr.isenabled OR device.mobilevr)">
-			<cube url="panos/PanA2hc.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1600" />
+			<cube url="panos/PanP2C.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2624" />
 		</image>
 
 		<image stereo="true" stereolabels="1|2" if="webvr.isenabled OR device.mobilevr">
-			<cube url="panos/PanA2hc.tiles/vr/pano_%t_%s.jpg" />
+			<cube url="panos/PanP2C.tiles/vr/pano_%t_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-149.456" atv="20.550" linkedscene="scene_pana3hc" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="121.222" atv="23.910" linkedscene="scene_pana1hc" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="120.649" atv="23.599" linkedscene="scene_panp1c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-151.482" atv="21.179" linkedscene="scene_panp3c" />
 
 	</scene>
 
-	<scene name="scene_PanA3E" title="PanA3E" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanA3E.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_PanP3C" title="PanP3C" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanP3C.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-84.691" vlookat="-4.497" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="250.989" vlookat="3.027" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/PanA3E.tiles/preview.jpg" />
+		<preview url="panos/PanP3C.tiles/preview.jpg" />
 
 		<image if="!(webvr.isenabled OR device.mobilevr)">
-			<cube url="panos/PanA3E.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1600" />
+			<cube url="panos/PanP3C.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2624" />
 		</image>
 
 		<image stereo="true" stereolabels="1|2" if="webvr.isenabled OR device.mobilevr">
-			<cube url="panos/PanA3E.tiles/vr/pano_%t_%s.jpg" />
+			<cube url="panos/PanP3C.tiles/vr/pano_%t_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="67.373" atv="16.200" linkedscene="scene_pana1hc" />
-
-	</scene>
-
-	<scene name="scene_PanA3hc" title="PanA3hc" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/PanA3hc.tiles/thumb.jpg" lat="" lng="" heading="">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="-93.326" vlookat="7.625" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/PanA3hc.tiles/preview.jpg" />
-
-		<image if="!(webvr.isenabled OR device.mobilevr)">
-			<cube url="panos/PanA3hc.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1600" />
-		</image>
-
-		<image stereo="true" stereolabels="1|2" if="webvr.isenabled OR device.mobilevr">
-			<cube url="panos/PanA3hc.tiles/vr/pano_%t_%s.jpg" />
-		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="18.521" atv="24.655" linkedscene="scene_pana2hc" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="66.410" atv="17.228" linkedscene="scene_pana1hc" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-114.169" atv="23.427" linkedscene="scene_pana3e" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="21.810" atv="21.671" linkedscene="scene_panp2c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="66.963" atv="17.876" linkedscene="scene_panp1c" />
 
 	</scene>
 
